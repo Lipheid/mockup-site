@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>민원ON — AI 기반 지능형 민원 관리</title>
+  <title>콘텐츠ON — AI 기반 디지털 콘텐츠 민원 관리</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,13 +11,13 @@
 
   <div id="publicApp">
     <header class="public-header">
-      <a class="brand" href="#" data-public="home" aria-label="민원ON Ȩ">
-        <span class="brand-mark">온</span><span><b>민원ON</b><small>AI 기반 지능형 민원 관리 시스템</small></span>
+      <a class="brand" href="#" data-public="home" aria-label="콘텐츠ON 홈">
+        <span class="brand-mark">온</span><span><b>콘텐츠ON</b><small>AI 기반 디지털 콘텐츠 민원 관리</small></span>
       </a>
       <button class="mobile-menu" aria-label="메뉴 열기">☰</button>
       <nav>
         <button data-public="about">서비스 소개</button>
-        <button data-public="apply">민원 접수</button>
+        <button data-public="apply">콘텐츠 민원 접수</button>
         <button data-public="track">처리 현황 조회</button>
         <button data-public="guide">이용 안내</button>
       </nav>
@@ -27,22 +27,22 @@
     <main id="publicContent"></main>
 
     <footer class="public-footer">
-      <div class="footer-logo">민원ON</div>
-      <div><b>더 정확하고, 더 빠른 민원 처리</b><p>AI 분석 결과는 담당자의 판단을 지원하는 참고 정보입니다.</p></div>
+      <div class="footer-logo">콘텐츠ON</div>
+      <div><b>브랜드 콘텐츠의 문제를 더 정확하고 빠르게</b><p>AI 분석 결과는 담당자의 판단을 지원하며, 확인되지 않은 의혹을 사실로 단정하지 않습니다.</p></div>
       <div class="footer-links"><a href="#">이용약관</a><a href="#">개인정보처리방침</a><a href="#">문의 120</a></div>
     </footer>
   </div>
 
   <div id="adminApp" class="admin-app hidden">
     <aside class="sidebar">
-      <div class="admin-brand"><span class="brand-mark">온</span><span><b>민원ON</b><small>ADMIN CONSOLE</small></span></div>
+      <div class="admin-brand"><span class="brand-mark">온</span><span><b>콘텐츠ON</b><small>CONTENT CARE CONSOLE</small></span></div>
       <nav id="adminNav">
         <button class="active" data-admin="dashboard"><span>⌂</span> 대시보드</button>
         <p>민원 업무</p>
-        <button data-admin="complaints"><span>▤</span> 민원 관리 <em>28</em></button>
-        <button data-admin="issues"><span>◉</span> 이슈 클러스터 <em>5</em></button>
+        <button data-admin="complaints"><span>▤</span> 콘텐츠 민원 <em>28</em></button>
+        <button data-admin="issues"><span>◉</span> 콘텐츠 이슈 <em>5</em></button>
         <button data-admin="risk"><span>⚠</span> 위험 민원 <em class="red">3</em></button>
-        <button data-admin="responses"><span>✎</span> 답변 및 처리</button>
+        <button data-admin="responses"><span>✎</span> 답변 및 공식 안내</button>
         <p>시스템</p>
         <button data-admin="settings"><span>⚙</span> 시스템 설정</button>
       </nav>
@@ -51,7 +51,7 @@
     <section class="admin-main">
       <header class="admin-header">
         <button class="side-toggle">☰</button>
-        <div class="admin-search">⌕ <input placeholder="민원번호, 제목, 민원인 검색"></div>
+        <div class="admin-search">⌕ <input placeholder="민원번호, 콘텐츠명, 채널 검색"></div>
         <button class="icon-button">?</button><button class="icon-button notification">♢<i></i></button>
       </header>
       <main id="adminContent"></main>
@@ -61,7 +61,7 @@
   <dialog id="loginDialog">
     <button class="dialog-close" id="closeLogin" aria-label="닫기">×</button>
     <div class="login-symbol">온</div>
-    <h2>관리자 로그인</h2><p>민원ON 관리자 콘솔에 접속합니다.</p>
+    <h2>관리자 로그인</h2><p>콘텐츠ON 관리자 콘솔에 접속합니다.</p>
     <form id="loginForm">
       <label>아이디<input value="admin" autocomplete="username"></label>
       <label>비밀번호<input type="password" value="1234" autocomplete="current-password"></label>
